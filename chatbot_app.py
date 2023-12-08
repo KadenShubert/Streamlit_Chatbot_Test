@@ -14,7 +14,7 @@ def main():
     with Gradient() as gradient:        
         new_model_adapter = gradient.get_model_adapter(model_adapter_id=st.secrets['Model_ID'])
 
-        user_input = st.text_input("## Ask your question:")
+        user_input = st.markdown("## Ask your question:")
         if user_input and user_input.lower() not in ['quit', 'exit']:
             sample_query = f"### Instruction: {user_input} \n\n### Response:"
             #st.markdown(f"Asking: {sample_query}")

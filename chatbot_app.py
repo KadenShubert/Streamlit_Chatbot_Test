@@ -21,7 +21,7 @@ def main():
 
             # before fine-tuning
             completion = new_model_adapter.complete(query=sample_query, max_generated_token_count=100).generated_output
-            st.markdown(f"Generated: {completion}")
+            st.markdown(f"{completion}")
 
         # Delete the model adapter after generating the response
         # new_model_adapter.delete()

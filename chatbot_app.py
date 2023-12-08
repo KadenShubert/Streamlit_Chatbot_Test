@@ -17,7 +17,7 @@ def main():
         user_input = st.text_input("Ask your question:")
         if user_input and user_input.lower() not in ['quit', 'exit']:
             sample_query = f"### Instruction: {user_input} \n\n### Response:"
-            st.markdown(f"Asking: {sample_query}")
+            #st.markdown(f"Asking: {sample_query}")
 
             # before fine-tuning
             completion = new_model_adapter.complete(query=sample_query, max_generated_token_count=100).generated_output

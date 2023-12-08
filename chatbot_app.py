@@ -24,7 +24,7 @@ def main():
             st.markdown(f"Generated: {completion}")
 
         # Delete the model adapter after generating the response
-        new_model_adapter.delete()
+        # new_model_adapter.delete()
 
 if __name__ == "__main__":
     main()

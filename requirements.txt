@@ -1,2 +1,2 @@
-gradientai
+gradientai==1.3.0
 streamlit==1.29.0
